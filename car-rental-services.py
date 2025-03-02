@@ -43,3 +43,10 @@ class Bike(Vehicle):
 
 def show_vehicle_info(vehicle):
     vehicle.display_info()  
+
+
+car1 = Car("Toyota","Corolla", "2020", 50, 5)
+car2= Car("Nissan", "X-Trail", 2019, 70, 7)
+
+bike1= Bike("Yamaha", "R1", 2019, "998cc", 30)
+bike2= Bike("Vespa", "Primavera", 2024, "155cc", 20)
