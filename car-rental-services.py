@@ -33,7 +33,7 @@ class Car(Vehicle):
 
 
 class Bike(Vehicle):
-    def __init__(self, brand, model, year, rental_price_per_day, engine_capacity):
+    def __init__(self, brand, model, year, engine_capacity, rental_price_per_day):
         self.engine_capacity = engine_capacity
         super().__init__(brand, model, year, rental_price_per_day)
     
@@ -50,3 +50,9 @@ car2= Car("Nissan", "X-Trail", 2019, 70, 7)
 
 bike1= Bike("Yamaha", "R1", 2019, "998cc", 30)
 bike2= Bike("Vespa", "Primavera", 2024, "155cc", 20)
+
+
+print(show_vehicle_info(car1))
+print(show_vehicle_info(car2))
+print(show_vehicle_info(bike1))
+print(show_vehicle_info(bike2))
