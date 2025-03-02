@@ -13,3 +13,11 @@ class Vehicle:
     def calculate_rental_cost(self, days):
         total_rental_cost = self._rental_price_per_day*days
         return total_rental_cost
+
+
+
+
+class Car(Vehicle):
+    def __init__(self, brand, model, year, rental_price_per_day, seating_capacity):
+        self.seating_capacity = seating_capacity
+        super().__init__(brand, model, year, rental_price_per_day)
