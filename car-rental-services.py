@@ -74,3 +74,5 @@ print(f"Rental cost for {bike1.brand} {bike1.model} for {days} days: ${bike1.cal
 print(f"Rental cost for {bike2.brand} {bike2.model} for {days} days: ${bike2.calculate_rental_cost(days)}")
 
 
+car1.set_rental_price_per_day(55)
+print(f"Updated rental price for {car1.brand} {car1.model}: ${car1.get_rental_price_per_day()}/day")
