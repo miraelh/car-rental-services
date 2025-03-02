@@ -52,7 +52,13 @@ bike1= Bike("Yamaha", "R1", 2019, "998cc", 30)
 bike2= Bike("Vespa", "Primavera", 2024, "155cc", 20)
 
 
-print(show_vehicle_info(car1))
-print(show_vehicle_info(car2))
-print(show_vehicle_info(bike1))
-print(show_vehicle_info(bike2))
+show_vehicle_info(car1)
+show_vehicle_info(car2)
+show_vehicle_info(bike1)
+show_vehicle_info(bike2)
+
+
+print(car1.calculate_rental_cost(3))
+print(car2.calculate_rental_cost(3))
+print(bike1.calculate_rental_cost(5))
+print(bike2.calculate_rental_cost(5))
