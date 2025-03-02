@@ -52,10 +52,16 @@ bike1= Bike("Yamaha", "R1", 2019, "998cc", 30)
 bike2= Bike("Vespa", "Primavera", 2024, "155cc", 20)
 
 
+
+print()
+print()
 show_vehicle_info(car1)
 show_vehicle_info(car2)
 show_vehicle_info(bike1)
 show_vehicle_info(bike2)
+print()
+print()
+
 
 # if we are to set the number of days ourselves:
 
@@ -63,7 +69,8 @@ print(f"Rental cost for {car1.brand} {car1.model} for 3 days: ${car1.calculate_r
 print(f"Rental cost for {car2.brand} {car2.model} for 3 days: ${car2.calculate_rental_cost(3)}")
 print(f"Rental cost for {bike1.brand} {bike1.model} for 5 days: ${bike1.calculate_rental_cost(5)}")
 print(f"Rental cost for {bike2.brand} {bike2.model} for 5 days: ${bike2.calculate_rental_cost(5)}")
-
+print()
+print()
 
 # if we are to ask the user to give the number of days:
 days = int(input("Please enter the number of days you need the vehicle for: "))
@@ -72,7 +79,11 @@ print(f"Rental cost for {car1.brand} {car1.model} for {days} days: ${car1.calcul
 print(f"Rental cost for {car2.brand} {car2.model} for {days} days: ${car2.calculate_rental_cost(days)}")
 print(f"Rental cost for {bike1.brand} {bike1.model} for {days} days: ${bike1.calculate_rental_cost(days)}")
 print(f"Rental cost for {bike2.brand} {bike2.model} for {days} days: ${bike2.calculate_rental_cost(days)}")
-
+print()
+print()
 
 car1.set_rental_price_per_day(55)
 print(f"Updated rental price for {car1.brand} {car1.model}: ${car1.get_rental_price_per_day()}/day")
+
+print()
+print()
