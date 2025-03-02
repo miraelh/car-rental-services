@@ -58,15 +58,19 @@ show_vehicle_info(bike1)
 show_vehicle_info(bike2)
 
 # if we are to set the number of days ourselves:
-print(car1.calculate_rental_cost(3))
-print(car2.calculate_rental_cost(3))
-print(bike1.calculate_rental_cost(5))
-print(bike2.calculate_rental_cost(5))
+
+print(f"Rental cost for {car1.brand} {car1.model} for 3 days: ${car1.calculate_rental_cost(3)}")
+print(f"Rental cost for {car2.brand} {car2.model} for 3 days: ${car2.calculate_rental_cost(3)}")
+print(f"Rental cost for {bike1.brand} {bike1.model} for 5 days: ${bike1.calculate_rental_cost(5)}")
+print(f"Rental cost for {bike2.brand} {bike2.model} for 5 days: ${bike2.calculate_rental_cost(5)}")
+
 
 # if we are to ask the user to give the number of days:
-days = int(input("Please enter the number of days you need the car for: "))
-print(car1.calculate_rental_cost(days))
-print(car2.calculate_rental_cost(days))
-print(bike1.calculate_rental_cost(days))
-print(bike2.calculate_rental_cost(days))
+days = int(input("Please enter the number of days you need the vehicle for: "))
+
+print(f"Rental cost for {car1.brand} {car1.model} for {days} days: ${car1.calculate_rental_cost(days)}")
+print(f"Rental cost for {car2.brand} {car2.model} for {days} days: ${car2.calculate_rental_cost(days)}")
+print(f"Rental cost for {bike1.brand} {bike1.model} for {days} days: ${bike1.calculate_rental_cost(days)}")
+print(f"Rental cost for {bike2.brand} {bike2.model} for {days} days: ${bike2.calculate_rental_cost(days)}")
+
 
