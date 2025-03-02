@@ -57,8 +57,16 @@ show_vehicle_info(car2)
 show_vehicle_info(bike1)
 show_vehicle_info(bike2)
 
-
+# if we are to set the number of days ourselves:
 print(car1.calculate_rental_cost(3))
 print(car2.calculate_rental_cost(3))
 print(bike1.calculate_rental_cost(5))
 print(bike2.calculate_rental_cost(5))
+
+# if we are to ask the user to give the number of days:
+days = int(input("Please enter the number of days you need the car for: "))
+print(car1.calculate_rental_cost(days))
+print(car2.calculate_rental_cost(days))
+print(bike1.calculate_rental_cost(days))
+print(bike2.calculate_rental_cost(days))
+
