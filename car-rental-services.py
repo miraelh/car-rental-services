@@ -13,7 +13,13 @@ class Vehicle:
     def calculate_rental_cost(self, days):
         total_rental_cost = self._rental_price_per_day*days
         return total_rental_cost
+    
 
+    def get_rental_price_per_day(self):
+       return self._rental_price_per_day
+        
+    def set_rental_price_per_day(self, rental_price_per_day):
+        self._rental_price_per_day = rental_price_per_day
 
 
 
